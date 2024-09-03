@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Nakata</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <header>
+        <h1>Guilherme Nakata</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Tenho 20 anos. Gosto de passar meu tempo livre jogando video-games e saindo com meus amigos. Sou
+            bem aberto a aprender coisas novas que possam agregar valor. No momento não trabalho na área, 
+            mas pretendo ingressar nesse mundo quando tiver a oportunidade. Nem sempre fui ligado a tecnologia,
+            até meu primo me mostrar como mexer em um computador. Desde então descobri muitas coisas, seja quebrando a
+            cabeça ou não, no final sempre tirava uma lição. 
+        </p>
+    </section>
+
+    <!-- Seção Formação -->
+    <section id="formacao">
+        <h2>Formação</h2>
+        <p>Atualmente cursando Análise e Desenvolvimento de Sistemas na UNINTER. Tenho o ensino médio completo
+            no Colegio de Aplicação de Resende-RJ. Língua nativa é o português brasileito e domino o básico 
+            do inglês.
+        </p>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <p>Meu Github:</p>
+        <a href="https://github.com/guiinkt" target="_blank">guiinkt</a>
+        <br>
+        <br>
+        Alguns projetos pessoais:
+        <h3>Guinterest</h3>
+        <a href="https://guiinkt.github.io/Guinterest/" target="_blank">Confira aqui</a>
+        <br>
+        <br>
+        <img src="./images/Guinterest.png" alt="Guinterest-preview">
+        <br>
+        <br>
+        <h3>Conversor de Moedas</h3>
+        <a href="https://guiinkt.github.io/ConversorMoedas/" target="_blank">Confira aqui</a>
+        <br>
+        <br>
+        <img src="./images/ConversorMoedas.png" alt="Guinterest-preview">
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Guilherme Nakata</p>
+    </footer>
+
+    <!-- JavaScript para navegação suave -->
+    <script>
+        // Adiciona rolagem suave para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
